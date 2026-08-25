@@ -1,0 +1,23 @@
+{
+  "name": "@oresoftware/pipe-operator-example",
+  "version": "0.1.0",
+  "description": "Dependency-free synchronous and asynchronous JavaScript pipeline examples",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": "./src/index.mjs",
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "example": "node examples/orders.mjs",
+    "test": "node --test",
+    "check": "node --check src/index.mjs && node --check examples/orders.mjs && npm test"
+  },
+  "license": "MIT"
+}
